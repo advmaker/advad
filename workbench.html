@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        body {
+            background: #000000;
+        }
+        .offset {
+            color: #555555;
+        }
+        .control-structures {
+            color: #FF851B;
+        }
+        .method {
+            color: #FFDC00;
+        }
+        .property {
+            color: #85144B;
+        }
+        .variable {
+            color: #B10DC9;
+        }
+        .number {
+            color: #7FDBFF;
+        }
+        .string {
+            color: #2ECC40;
+        }
+        .comment {
+            color: #AAAAAA;
+        }
+        .code {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: monospace;
+        }
+
+    </style>
+</head>
+<body>
+<div class="code">
+    <span class="control-structures">programma</span>!<br/>
+    <span class="offset">#</span><span class="variable">€obj</span><-<span class="control-structures">objekt</span>!<span class="variable">€max</span><br/>
+    <span class="offset">##</span><span class="control-structures">€1</span>?<span class="property">max</span><-<span class="variable">€max</span><br/>
+    <span class="offset">##</span><span class="property">max</span>:=><span class="number">0</span> <span class="comment">{!-- Это свойство объекта. Пример комментария --}</span><br/>
+    <span class="offset">##</span><span class="property">sum</span>:=><span class="number">0</span><br/>
+    <span class="offset">##</span><span class="method">isMalo</span>:=><span class="control-structures">fu</span>!-<br/>
+    <span class="offset">###</span><span class="control-structures">rezult</span><-<span class="control-structures">€1</span>?<span class="property">sum</span> < <span class="control-structures">€1</span>?<span class="property">max</span><br/>
+    <span class="offset">##</span><span class="method">plus</span>:=><span class="control-structures">fu</span>!<span class="variable">€param1</span>|<span class="variable">€param2</span><br/>
+    <span class="offset">###</span><span class="control-structures">€1</span>?<span class="property">sum</span><-<span class="control-structures">€1</span>?<span class="property">sum</span>+<span class="variable">€param1</span>+<span class="variable">€param2</span><br/>
+    <span class="offset">###</span><span class="control-structures">rezult</span><-<span class="control-structures">€1</span>?<span class="property">sum</span><br/>
+    <span class="offset">#</span><span class="variable">€i</span><-<span class="number">1</span><br/>
+    <span class="offset">#</span><span class="control-structures">adr</span><span class="variable">:point1</span>>><span class="variable">€obj</span>?<span class="method">plus</span>!<span class="variable">€i</span>|<span class="number">0</span><br/>
+    <span class="offset">#</span><span class="control-structures">esli</span> <span class="variable">€obj</span>?<span class="method">isMalo!</span><br/>
+    <span class="offset">##</span><span class="control-structures">idi</span>-><span class="variable">:point1</span><br/>
+    <span class="offset">#</span><span class="control-structures">napisat</span><-<span class="string">«Program stopped»</span>
+</div>
+</body>
+</html>
